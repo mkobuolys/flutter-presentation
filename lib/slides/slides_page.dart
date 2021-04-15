@@ -9,7 +9,7 @@ class SlidesPage extends StatelessWidget {
     return Scaffold(
       body: PageView(
         children: [
-          // TitleSlide(),
+          TitleSlide(),
           AgendaSlide(),
         ],
       ),
