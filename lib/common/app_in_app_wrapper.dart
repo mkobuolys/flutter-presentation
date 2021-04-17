@@ -11,8 +11,8 @@ class AppInAppWrapper extends StatelessWidget {
   Widget build(BuildContext context) {
     return ConstrainedBox(
       constraints: const BoxConstraints(
-        maxWidth: 540.0,
-        maxHeight: 960.0,
+        maxWidth: 450.0,
+        maxHeight: 800.0,
       ),
       child: ClipRect(
         child: AspectRatio(

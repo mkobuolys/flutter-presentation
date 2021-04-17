@@ -3,7 +3,13 @@ import 'package:flutter/material.dart';
 import '../common/social_media_footer.dart';
 
 class TitleScreenTemplate extends StatelessWidget {
-  const TitleScreenTemplate();
+  final String title;
+  final String subtitle;
+
+  const TitleScreenTemplate({
+    required this.title,
+    required this.subtitle,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -34,14 +40,15 @@ class TitleScreenTemplate extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        "Let's talk about Flutter",
+                        title,
                         style: Theme.of(context).textTheme.headline1?.copyWith(
                               color: const Color(0xFF02569B),
                               fontWeight: FontWeight.bold,
                             ),
                       ),
+                      const SizedBox(height: 8.0),
                       Text(
-                        'Mangirdas Kazlauskas, GDE for Flutter & Dart',
+                        subtitle,
                         style: Theme.of(context).textTheme.headline4?.copyWith(
                               color: const Color(0xFF02569B),
                               fontWeight: FontWeight.bold,

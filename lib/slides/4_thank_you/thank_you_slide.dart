@@ -2,14 +2,14 @@ import 'package:flutter/widgets.dart';
 
 import '../../templates/templates.dart';
 
-class TitleSlide extends StatelessWidget {
-  const TitleSlide();
+class ThankYouSlide extends StatelessWidget {
+  const ThankYouSlide();
 
   @override
   Widget build(BuildContext context) {
     return const TitleScreenTemplate(
-      title: "Let's talk about Flutter",
-      subtitle: 'Mangirdas Kazlauskas, GDE for Flutter & Dart',
+      title: 'Thank you!',
+      subtitle: "It's time for your questions.",
     );
   }
 }

@@ -1,7 +1,7 @@
 import 'package:flutter/widgets.dart';
 
 import '../../common/app_in_app_wrapper.dart';
-import '../../templates/split_screen_template.dart';
+import '../../templates/templates.dart';
 import 'onboarding_app/onboarding_app.dart';
 
 class CustomUiSlide extends StatelessWidget {

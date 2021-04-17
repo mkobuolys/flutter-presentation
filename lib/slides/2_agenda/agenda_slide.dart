@@ -18,7 +18,7 @@ class AgendaSlide extends StatelessWidget {
           'About you',
         ],
       ),
-      rightChild: Text('Right'),
+      rightChild: SizedBox(),
       leftFlex: 2,
       rightFlex: 3,
     );
