@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../common/social_media_footer.dart';
+
 class SplitScreenTemplate extends StatelessWidget {
   final String title;
   final Widget leftChild;
@@ -43,7 +45,12 @@ class SplitScreenTemplate extends StatelessWidget {
         ),
         Expanded(
           flex: rightFlex,
-          child: rightChild,
+          child: Column(
+            children: [
+              Expanded(child: rightChild),
+              const SocialMediaHandle(),
+            ],
+          ),
         )
       ],
     );
