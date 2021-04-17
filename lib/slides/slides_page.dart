@@ -4,6 +4,7 @@ import '1_title/title_slide.dart';
 import '2_agenda/agenda_slide.dart';
 import '3_custom_ui/custom_ui_slide.dart';
 import '4_thank_you/thank_you_slide.dart';
+import '5_rive/rive_slide.dart';
 
 class SlidesPage extends StatelessWidget {
   const SlidesPage();
@@ -21,12 +22,14 @@ class SlidesPage extends StatelessWidget {
             case 2:
               return const CustomUiSlide();
             case 3:
+              return const RiveSlide();
+            case 4:
               return const ThankYouSlide();
           }
 
           return const SizedBox();
         },
-        itemCount: 4,
+        itemCount: 5,
       ),
     );
   }

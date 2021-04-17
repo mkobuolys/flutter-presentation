@@ -29,7 +29,6 @@ class LoginForm extends StatelessWidget {
             child: const CustomInputField(
               label: 'Username or Email',
               prefixIcon: Icons.person,
-              obscureText: true,
             ),
           ),
           SizedBox(height: space),
