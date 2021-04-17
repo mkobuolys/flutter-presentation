@@ -9,7 +9,7 @@ void main() {
 class _App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: 'Flutter Presentation',
       debugShowCheckedModeBanner: false,
       home: SlidesPage(),

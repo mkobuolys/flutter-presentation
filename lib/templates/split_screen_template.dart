@@ -43,9 +43,7 @@ class SplitScreenTemplate extends StatelessWidget {
         ),
         Expanded(
           flex: rightFlex,
-          child: Container(
-            child: rightChild,
-          ),
+          child: rightChild,
         )
       ],
     );
