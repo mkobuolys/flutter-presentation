@@ -6,6 +6,9 @@ import '2_agenda/agenda_slide.dart';
 import '3_about_me/about_me_slide.dart';
 import 'custom_ui/custom_ui_slide.dart';
 import 'drawbacks_of_flutter/drawbacks_of_flutter_slide.dart';
+import 'flutter_for_desktop/flutter_for_desktop_slide.dart';
+import 'flutter_for_mobile/flutter_for_mobile_slide.dart';
+import 'flutter_for_toaster/flutter_for_toaster_slide.dart';
 import 'flutter_for_web/flutter_for_web_slide.dart';
 import 'rive/rive_slide.dart';
 import 'thank_you/thank_you_slide.dart';
@@ -20,7 +23,7 @@ class SlidesPage extends StatefulWidget {
 class _SlidesPageState extends State<SlidesPage> {
   static const _slideSwitchDuration = Duration(milliseconds: 500);
   static const _slideSwitchCurve = Curves.easeInOut;
-  static const _slidesCount = 8;
+  static const _slidesCount = 11;
 
   final _pageController = PageController();
   final _focusNode = FocusNode();
@@ -104,14 +107,20 @@ class _SlidesPageState extends State<SlidesPage> {
                   case 2:
                     return const AboutMeSlide();
                   case 3:
-                    return const FlutterForWebSlide();
+                    return const FlutterForMobileSlide();
                   case 4:
-                    return const CustomUiSlide();
+                    return const FlutterForWebSlide();
                   case 5:
-                    return const RiveSlide();
+                    return const FlutterForDesktopSlide();
                   case 6:
-                    return const DrawbacksOfFlutterSlide();
+                    return const FlutterForToasterSlide();
                   case 7:
+                    return const CustomUiSlide();
+                  case 8:
+                    return const RiveSlide();
+                  case 9:
+                    return const DrawbacksOfFlutterSlide();
+                  case 10:
                     return const ThankYouSlide();
                 }
 

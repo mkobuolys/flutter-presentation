@@ -15,14 +15,12 @@ class FlutterForWebSlide extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           const Expanded(
-            child: FractionallySizedBox(
-              child: WebBrowser(
-                initialUrl: 'https://flutterplasma.dev/',
-                javascriptEnabled: true,
-                interactionSettings: WebBrowserInteractionSettings(
-                  topBar: null,
-                  bottomBar: null,
-                ),
+            child: WebBrowser(
+              initialUrl: 'https://flutterplasma.dev/',
+              javascriptEnabled: true,
+              interactionSettings: WebBrowserInteractionSettings(
+                topBar: null,
+                bottomBar: null,
               ),
             ),
           ),
