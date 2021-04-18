@@ -6,6 +6,7 @@ import '2_agenda/agenda_slide.dart';
 import '3_about_me/about_me_slide.dart';
 import 'custom_ui/custom_ui_slide.dart';
 import 'drawbacks_of_flutter/drawbacks_of_flutter_slide.dart';
+import 'flutter_for_web/flutter_for_web_slide.dart';
 import 'rive/rive_slide.dart';
 import 'thank_you/thank_you_slide.dart';
 
@@ -19,7 +20,7 @@ class SlidesPage extends StatefulWidget {
 class _SlidesPageState extends State<SlidesPage> {
   static const _slideSwitchDuration = Duration(milliseconds: 500);
   static const _slideSwitchCurve = Curves.easeInOut;
-  static const _slidesCount = 7;
+  static const _slidesCount = 8;
 
   final _pageController = PageController();
   final _focusNode = FocusNode();
@@ -103,12 +104,14 @@ class _SlidesPageState extends State<SlidesPage> {
                   case 2:
                     return const AboutMeSlide();
                   case 3:
-                    return const CustomUiSlide();
+                    return const FlutterForWebSlide();
                   case 4:
-                    return const RiveSlide();
+                    return const CustomUiSlide();
                   case 5:
-                    return const DrawbacksOfFlutterSlide();
+                    return const RiveSlide();
                   case 6:
+                    return const DrawbacksOfFlutterSlide();
+                  case 7:
                     return const ThankYouSlide();
                 }
 

@@ -11,7 +11,7 @@ class OnboardingApp extends StatelessWidget {
       builder: (context, constraints) {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
-          title: "Let's talk about Flutter",
+          title: 'Let me introduce you to Flutter',
           home: Onboarding(
             screenHeight: constraints.maxHeight,
             screenWidth: constraints.maxWidth,

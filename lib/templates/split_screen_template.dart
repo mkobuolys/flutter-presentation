@@ -36,6 +36,7 @@ class SplitScreenTemplate extends StatelessWidget {
                     style: Theme.of(context).textTheme.headline1?.copyWith(
                           color: Colors.white,
                           fontWeight: FontWeight.bold,
+                          letterSpacing: 2.0,
                         ),
                   ),
                 ),

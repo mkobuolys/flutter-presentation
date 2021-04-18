@@ -43,6 +43,27 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.15.0"
+  crypto:
+    dependency: transitive
+    description:
+      name: crypto
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "3.0.1"
+  csp:
+    dependency: transitive
+    description:
+      name: csp
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.1.1"
+  csslib:
+    dependency: transitive
+    description:
+      name: csslib
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.17.0"
   cupertino_icons:
     dependency: "direct main"
     description:
@@ -57,6 +78,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.2.0"
+  fixnum:
+    dependency: transitive
+    description:
+      name: fixnum
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.0"
   flare_flutter:
     dependency: "direct main"
     description:
@@ -81,6 +109,20 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  html:
+    dependency: transitive
+    description:
+      name: html
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.15.0"
+  kind:
+    dependency: transitive
+    description:
+      name: kind
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.5.2"
   lint:
     dependency: "direct main"
     description:
@@ -102,6 +144,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.3.0"
+  mime:
+    dependency: transitive
+    description:
+      name: mime
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.0"
   path:
     dependency: transitive
     description:
@@ -130,6 +179,20 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "4.1.0"
+  protobuf:
+    dependency: transitive
+    description:
+      name: protobuf
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.0"
+  share:
+    dependency: transitive
+    description:
+      name: share
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.1"
   sky_engine:
     dependency: transitive
     description: flutter
@@ -184,6 +247,20 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.3.0"
+  universal_html:
+    dependency: transitive
+    description:
+      name: universal_html
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.8"
+  universal_io:
+    dependency: transitive
+    description:
+      name: universal_io
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.4"
   vector_math:
     dependency: transitive
     description:
@@ -191,6 +268,27 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.0"
+  web_browser:
+    dependency: "direct main"
+    description:
+      name: web_browser
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.5.0"
+  web_node:
+    dependency: transitive
+    description:
+      name: web_node
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.2.1"
+  webview_flutter:
+    dependency: transitive
+    description:
+      name: webview_flutter
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.4"
   xml:
     dependency: transitive
     description:
@@ -200,4 +298,4 @@ packages:
     version: "5.1.0"
 sdks:
   dart: ">=2.12.0 <3.0.0"
-  flutter: ">=1.24.0-7.0"
+  flutter: ">=2.0.0"

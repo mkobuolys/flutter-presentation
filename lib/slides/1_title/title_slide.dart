@@ -8,7 +8,7 @@ class TitleSlide extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const TitleScreenTemplate(
-      title: "Let's talk about Flutter",
+      title: 'Let me introduce you to Flutter',
       subtitle:
           'Mangirdas Kazlauskas, Google Developer Expert for Flutter & Dart',
     );

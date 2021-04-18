@@ -32,29 +32,37 @@ class TitleScreenTemplate extends StatelessWidget {
                     height: 200.0,
                   ),
                 ),
-                const SizedBox(width: 16.0),
                 Expanded(
                   flex: 10,
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(
-                        title,
-                        style: Theme.of(context).textTheme.headline1?.copyWith(
-                              color: const Color(0xFF02569B),
-                              fontWeight: FontWeight.bold,
-                            ),
-                      ),
-                      const SizedBox(height: 8.0),
-                      Text(
-                        subtitle,
-                        style: Theme.of(context).textTheme.headline4?.copyWith(
-                              color: const Color(0xFF02569B),
-                              fontWeight: FontWeight.bold,
-                            ),
-                      ),
-                    ],
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        FittedBox(
+                          child: Text(
+                            title,
+                            style:
+                                Theme.of(context).textTheme.headline1?.copyWith(
+                                      color: const Color(0xFF02569B),
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                          ),
+                        ),
+                        const SizedBox(height: 8.0),
+                        FittedBox(
+                          child: Text(
+                            subtitle,
+                            style:
+                                Theme.of(context).textTheme.headline4?.copyWith(
+                                      color: const Color(0xFF02569B),
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ],
