@@ -1,6 +1,5 @@
 import 'package:flutter/widgets.dart';
 
-import '../../common/app_in_app_wrapper.dart';
 import '../../templates/templates.dart';
 import 'onboarding_app/onboarding_app.dart';
 
@@ -9,16 +8,10 @@ class CustomUiSlide extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SplitScreenTemplate(
+    return const AppInAppTemplate(
       title: 'Custom UI',
-      leftChild: const SizedBox(),
-      rightChild: Container(
-        margin: const EdgeInsets.all(32.0),
-        alignment: Alignment.center,
-        child: const AppInAppWrapper(app: OnboardingApp()),
-      ),
-      leftFlex: 2,
-      rightFlex: 3,
+      leftChild: SizedBox(),
+      app: OnboardingApp(),
     );
   }
 }
