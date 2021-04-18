@@ -30,12 +30,14 @@ class SplitScreenTemplate extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
-                  title,
-                  style: Theme.of(context).textTheme.headline1?.copyWith(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                      ),
+                FittedBox(
+                  child: Text(
+                    title,
+                    style: Theme.of(context).textTheme.headline1?.copyWith(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                        ),
+                  ),
                 ),
                 const SizedBox(height: 32.0),
                 Expanded(child: leftChild),
@@ -47,7 +49,12 @@ class SplitScreenTemplate extends StatelessWidget {
           flex: rightFlex,
           child: Column(
             children: [
-              Expanded(child: rightChild),
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.all(32.0),
+                  child: rightChild,
+                ),
+              ),
               const SocialMediaHandle(),
             ],
           ),

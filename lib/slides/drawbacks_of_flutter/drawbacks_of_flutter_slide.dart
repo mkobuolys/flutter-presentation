@@ -3,21 +3,14 @@ import 'package:flutter/widgets.dart';
 import '../../common/bullet_list.dart';
 import '../../templates/templates.dart';
 
-class AgendaSlide extends StatelessWidget {
-  const AgendaSlide();
+class DrawbacksOfFlutterSlide extends StatelessWidget {
+  const DrawbacksOfFlutterSlide();
 
   @override
   Widget build(BuildContext context) {
     return const SplitScreenTemplate(
-      title: 'Agenda',
-      leftChild: BulletList(
-        items: [
-          'About me',
-          'About Flutter',
-          'About Flutter, but in detail',
-          'About you',
-        ],
-      ),
+      title: 'Drawbacks of Flutter',
+      leftChild: BulletList(items: ['None']),
       rightChild: SizedBox(),
       leftFlex: 2,
       rightFlex: 3,

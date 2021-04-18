@@ -9,7 +9,8 @@ class TitleSlide extends StatelessWidget {
   Widget build(BuildContext context) {
     return const TitleScreenTemplate(
       title: "Let's talk about Flutter",
-      subtitle: 'Mangirdas Kazlauskas, GDE for Flutter & Dart',
+      subtitle:
+          'Mangirdas Kazlauskas, Google Developer Expert for Flutter & Dart',
     );
   }
 }
