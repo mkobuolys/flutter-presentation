@@ -22,6 +22,7 @@ class _SlidesPageState extends State<SlidesPage> {
   static const _slidesCount = 7;
 
   final _pageController = PageController();
+  final _focusNode = FocusNode();
 
   late final Map<LogicalKeySet, Intent> _shortcuts;
   late final Map<Type, Action<Intent>> _actions;
@@ -46,6 +47,7 @@ class _SlidesPageState extends State<SlidesPage> {
   @override
   void dispose() {
     _pageController.dispose();
+    _focusNode.dispose();
     super.dispose();
   }
 
@@ -84,31 +86,36 @@ class _SlidesPageState extends State<SlidesPage> {
       body: FocusableActionDetector(
         shortcuts: _shortcuts,
         actions: _actions,
-        child: Focus(
-          autofocus: true,
-          child: PageView.builder(
-            controller: _pageController,
-            itemBuilder: (context, index) {
-              switch (index) {
-                case 0:
-                  return const TitleSlide();
-                case 1:
-                  return const AgendaSlide();
-                case 2:
-                  return const AboutMeSlide();
-                case 3:
-                  return const CustomUiSlide();
-                case 4:
-                  return const RiveSlide();
-                case 5:
-                  return const DrawbacksOfFlutterSlide();
-                case 6:
-                  return const ThankYouSlide();
-              }
+        child: GestureDetector(
+          onTap: () {
+            FocusScope.of(context).requestFocus(_focusNode);
+          },
+          child: Focus(
+            focusNode: _focusNode,
+            child: PageView.builder(
+              controller: _pageController,
+              itemBuilder: (context, index) {
+                switch (index) {
+                  case 0:
+                    return const TitleSlide();
+                  case 1:
+                    return const AgendaSlide();
+                  case 2:
+                    return const AboutMeSlide();
+                  case 3:
+                    return const CustomUiSlide();
+                  case 4:
+                    return const RiveSlide();
+                  case 5:
+                    return const DrawbacksOfFlutterSlide();
+                  case 6:
+                    return const ThankYouSlide();
+                }
 
-              return const SizedBox();
-            },
-            itemCount: _slidesCount,
+                return const SizedBox();
+              },
+              itemCount: _slidesCount,
+            ),
           ),
         ),
       ),
