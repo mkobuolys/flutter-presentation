@@ -3,8 +3,8 @@ import 'package:flutter/widgets.dart';
 import '../../templates/templates.dart';
 import 'teddy_example/teddy_example.dart';
 
-class RiveSlide extends StatelessWidget {
-  const RiveSlide();
+class AnimationsRiveSlide extends StatelessWidget {
+  const AnimationsRiveSlide();
 
   @override
   Widget build(BuildContext context) {

@@ -3,8 +3,8 @@ import 'package:flutter/widgets.dart';
 import '../../common/bullet_list.dart';
 import '../../templates/templates.dart';
 
-class DrawbacksOfFlutterSlide extends StatelessWidget {
-  const DrawbacksOfFlutterSlide();
+class DrawbacksSlide extends StatelessWidget {
+  const DrawbacksSlide();
 
   @override
   Widget build(BuildContext context) {
