@@ -4,15 +4,26 @@ import 'package:flutter/services.dart';
 import '1_title/title_slide.dart';
 import '2_agenda/agenda_slide.dart';
 import '3_about_me/about_me_slide.dart';
+import 'community/community_slide.dart';
 import 'custom_ui/custom_ui_slide.dart';
+import 'dart/dart_slide.dart';
+import 'design_system/design_system_slide.dart';
 import 'drawbacks_of_flutter/drawbacks_of_flutter_slide.dart';
 import 'flutter_around_you/flutter_around_you_slide.dart';
+import 'flutter_comparison/flutter_comparison_slide.dart';
+import 'flutter_concepts/flutter_concepts_slide.dart';
 import 'flutter_for_desktop/flutter_for_desktop_slide.dart';
 import 'flutter_for_mobile/flutter_for_mobile_slide.dart';
 import 'flutter_for_toaster/flutter_for_toaster_slide.dart';
 import 'flutter_for_web/flutter_for_web_slide.dart';
+import 'flutter_intro/flutter_intro_slide.dart';
+import 'future_of_flutter/future_of_flutter_slide.dart';
+import 'open_source/open_source_slide.dart';
 import 'rive/rive_slide.dart';
+import 'self_promotion/self_promotion_slide.dart';
 import 'thank_you/thank_you_slide.dart';
+import 'tooling/tooling_slide.dart';
+import 'transition_to_flutter/transition_to_flutter_slide.dart';
 
 class SlidesPage extends StatefulWidget {
   const SlidesPage();
@@ -24,7 +35,7 @@ class SlidesPage extends StatefulWidget {
 class _SlidesPageState extends State<SlidesPage> {
   static const _slideSwitchDuration = Duration(milliseconds: 500);
   static const _slideSwitchCurve = Curves.easeInOut;
-  static const _slidesCount = 12;
+  static const _slidesCount = 23;
 
   final _pageController = PageController();
   final _focusNode = FocusNode();
@@ -108,22 +119,44 @@ class _SlidesPageState extends State<SlidesPage> {
                   case 2:
                     return const AboutMeSlide();
                   case 3:
-                    return const FlutterForMobileSlide();
+                    return const FlutterIntroSlide();
                   case 4:
-                    return const FlutterForWebSlide();
+                    return const FlutterComparisonSlide();
                   case 5:
-                    return const FlutterForDesktopSlide();
+                    return const FlutterConceptsSlide();
                   case 6:
-                    return const FlutterForToasterSlide();
+                    return const FlutterForMobileSlide();
                   case 7:
-                    return const CustomUiSlide();
+                    return const FlutterForWebSlide();
                   case 8:
-                    return const RiveSlide();
+                    return const FlutterForDesktopSlide();
                   case 9:
-                    return const FlutterAroundYouSlide();
+                    return const FlutterForToasterSlide();
                   case 10:
-                    return const DrawbacksOfFlutterSlide();
+                    return const DesignSystemSlide();
                   case 11:
+                    return const CustomUiSlide();
+                  case 12:
+                    return const RiveSlide();
+                  case 13:
+                    return const FlutterAroundYouSlide();
+                  case 14:
+                    return const DartSlide();
+                  case 15:
+                    return const ToolingSlide();
+                  case 16:
+                    return const OpenSourceSlide();
+                  case 17:
+                    return const CommunitySlide();
+                  case 18:
+                    return const DrawbacksOfFlutterSlide();
+                  case 19:
+                    return const TransitionToFlutterSlide();
+                  case 20:
+                    return const FutureOfFlutterSlide();
+                  case 21:
+                    return const SelfPromotionSlide();
+                  case 22:
                     return const ThankYouSlide();
                 }
 
