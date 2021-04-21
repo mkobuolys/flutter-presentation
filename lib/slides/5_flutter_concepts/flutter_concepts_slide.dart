@@ -33,6 +33,7 @@ class _FlutterConceptsSlideState extends State<FlutterConceptsSlide> {
       title: 'How Flutter works?',
       leftChild: const SizedBox(),
       rightChild: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
             '"Everything is a Widget"',
@@ -45,7 +46,7 @@ class _FlutterConceptsSlideState extends State<FlutterConceptsSlide> {
           const SizedBox(height: 16.0),
           Text(
             'Announcing Flutter 1.0 (Flutter Live, Keynote Part 1)',
-            style: Theme.of(context).textTheme.headline6,
+            style: Theme.of(context).textTheme.headline4,
           ),
         ],
       ),

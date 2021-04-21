@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../common/bullet_list.dart';
 import '../../templates/templates.dart';
 
 class FlutterAroundYouSlide extends StatelessWidget {
@@ -9,7 +10,13 @@ class FlutterAroundYouSlide extends StatelessWidget {
   Widget build(BuildContext context) {
     return CarouselTemplate(
       title: 'Flutter around you',
-      leftChild: const SizedBox(),
+      leftChild: const BulletList(
+        items: [
+          'Google products - Google Ads, Google Pay, Google Nest Hub, Stadia',
+          '150,000+ apps published to the App Store/Google Play Store',
+          "World's largest companies say YES to Flutter",
+        ],
+      ),
       carouselChildren: [
         Image.asset('images/apps/google_assistant.png'),
         Image.asset('images/apps/google_ads.png'),

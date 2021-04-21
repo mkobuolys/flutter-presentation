@@ -9,7 +9,7 @@ class AnimationsRiveSlide extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const AppInAppTemplate(
-      title: 'Rive',
+      title: 'Custom UI++',
       leftChild: SizedBox(),
       app: TeddyExample(),
     );
