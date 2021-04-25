@@ -1,5 +1,6 @@
 import 'package:flutter/widgets.dart';
 
+import '../../common/bullet_list.dart';
 import '../../templates/templates.dart';
 
 class FlutterComparisonSlide extends StatelessWidget {
@@ -7,12 +8,13 @@ class FlutterComparisonSlide extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SplitScreenTemplate(
+    return CarouselTemplate(
       title: 'Flutter vs React Native',
-      leftChild: SizedBox(),
-      rightChild: SizedBox(),
-      leftFlex: 2,
-      rightFlex: 3,
+      leftChild: const BulletList(items: []),
+      carouselChildren: [
+        Image.asset('images/flutter_vs_rn/google_trends.png'),
+        Image.asset('images/flutter_vs_rn/has_flutter_passed_rn.png'),
+      ],
     );
   }
 }
