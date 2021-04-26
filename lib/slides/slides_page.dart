@@ -6,13 +6,13 @@ import '11_flutter_for_web/flutter_for_web_slide.dart';
 import '12_flutter_for_desktop/flutter_for_desktop_slide.dart';
 import '13_flutter_for_toaster/flutter_for_toaster_slide.dart';
 import '14_flutter_comparison/flutter_comparison_slide.dart';
-import '15_drawbacks/drawbacks_slide.dart';
-import '16_dart/dart_slide.dart';
-import '17_tooling/tooling_slide.dart';
-import '18_open_source/open_source_slide.dart';
-import '19_integrations/integrations_slide.dart';
+import '15_dart/dart_slide.dart';
+import '16_tooling/tooling_slide.dart';
+import '17_open_source/open_source_slide.dart';
+import '18_integrations/integrations_slide.dart';
+import '19_community/community_slide.dart';
 import '1_title/title_slide.dart';
-import '20_community/community_slide.dart';
+import '20_drawbacks/drawbacks_slide.dart';
 import '21_transition_to_flutter/transition_to_flutter_slide.dart';
 import '22_future_of_flutter/future_of_flutter_slide.dart';
 import '23_self_promotion/self_promotion_slide.dart';
@@ -142,17 +142,17 @@ class _SlidesPageState extends State<SlidesPage> {
                   case 13:
                     return const FlutterComparisonSlide();
                   case 14:
-                    return const DrawbacksSlide();
-                  case 15:
                     return const DartSlide();
-                  case 16:
+                  case 15:
                     return const ToolingSlide();
-                  case 17:
+                  case 16:
                     return const OpenSourceSlide();
-                  case 18:
+                  case 17:
                     return const IntegrationsSlide();
-                  case 19:
+                  case 18:
                     return const CommunitySlide();
+                  case 19:
+                    return const DrawbacksSlide();
                   case 20:
                     return const TransitionToFlutterSlide();
                   case 21:
