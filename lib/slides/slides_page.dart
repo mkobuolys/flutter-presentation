@@ -1,30 +1,29 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import '10_flutter_for_mobile/flutter_for_mobile_slide.dart';
-import '11_flutter_for_web/flutter_for_web_slide.dart';
-import '12_flutter_for_desktop/flutter_for_desktop_slide.dart';
-import '13_flutter_for_toaster/flutter_for_toaster_slide.dart';
-import '14_flutter_comparison/flutter_comparison_slide.dart';
-import '15_dart/dart_slide.dart';
-import '16_tooling/tooling_slide.dart';
-import '17_open_source/open_source_slide.dart';
-import '18_integrations/integrations_slide.dart';
-import '19_community/community_slide.dart';
+import '10_flutter_for_web/flutter_for_web_slide.dart';
+import '11_flutter_for_desktop/flutter_for_desktop_slide.dart';
+import '12_flutter_for_toaster/flutter_for_toaster_slide.dart';
+import '13_flutter_comparison/flutter_comparison_slide.dart';
+import '14_dart/dart_slide.dart';
+import '15_tooling/tooling_slide.dart';
+import '16_open_source/open_source_slide.dart';
+import '17_integrations/integrations_slide.dart';
+import '18_community/community_slide.dart';
+import '19_drawbacks/drawbacks_slide.dart';
 import '1_title/title_slide.dart';
-import '20_drawbacks/drawbacks_slide.dart';
-import '21_transition_to_flutter/transition_to_flutter_slide.dart';
-import '22_future_of_flutter/future_of_flutter_slide.dart';
-import '23_self_promotion/self_promotion_slide.dart';
-import '24_thank_you/thank_you_slide.dart';
+import '20_transition_to_flutter/transition_to_flutter_slide.dart';
+import '21_future_of_flutter/future_of_flutter_slide.dart';
+import '22_self_promotion/self_promotion_slide.dart';
+import '23_thank_you/thank_you_slide.dart';
 import '2_agenda/agenda_slide.dart';
 import '3_about_me/about_me_slide.dart';
 import '4_flutter_intro/flutter_intro_slide.dart';
 import '5_flutter_concepts/flutter_concepts_slide.dart';
 import '6_flutter_around_you/flutter_around_you_slide.dart';
-import '7_design_system/design_system_slide.dart';
-import '8_custom_ui/custom_ui_slide.dart';
-import '9_animations_rive/animations_rive_slide.dart';
+import '7_custom_ui/custom_ui_slide.dart';
+import '8_animations_rive/animations_rive_slide.dart';
+import '9_flutter_for_mobile/flutter_for_mobile_slide.dart';
 
 class SlidesPage extends StatefulWidget {
   const SlidesPage();
@@ -36,7 +35,7 @@ class SlidesPage extends StatefulWidget {
 class _SlidesPageState extends State<SlidesPage> {
   static const _slideSwitchDuration = Duration(milliseconds: 500);
   static const _slideSwitchCurve = Curves.easeInOut;
-  static const _slidesCount = 24;
+  static const _slidesCount = 23;
 
   final _pageController = PageController();
   final _focusNode = FocusNode();
@@ -126,40 +125,38 @@ class _SlidesPageState extends State<SlidesPage> {
                   case 5:
                     return const FlutterAroundYouSlide();
                   case 6:
-                    return const DesignSystemSlide();
-                  case 7:
                     return const CustomUiSlide();
-                  case 8:
+                  case 7:
                     return const AnimationsRiveSlide();
-                  case 9:
+                  case 8:
                     return const FlutterForMobileSlide();
-                  case 10:
+                  case 9:
                     return const FlutterForWebSlide();
-                  case 11:
+                  case 10:
                     return const FlutterForDesktopSlide();
-                  case 12:
+                  case 11:
                     return const FlutterForToasterSlide();
-                  case 13:
+                  case 12:
                     return const FlutterComparisonSlide();
-                  case 14:
+                  case 13:
                     return const DartSlide();
-                  case 15:
+                  case 14:
                     return const ToolingSlide();
-                  case 16:
+                  case 15:
                     return const OpenSourceSlide();
-                  case 17:
+                  case 16:
                     return const IntegrationsSlide();
-                  case 18:
+                  case 17:
                     return const CommunitySlide();
-                  case 19:
+                  case 18:
                     return const DrawbacksSlide();
-                  case 20:
+                  case 19:
                     return const TransitionToFlutterSlide();
-                  case 21:
+                  case 20:
                     return const FutureOfFlutterSlide();
-                  case 22:
+                  case 21:
                     return const SelfPromotionSlide();
-                  case 23:
+                  case 22:
                     return const ThankYouSlide();
                 }
 
