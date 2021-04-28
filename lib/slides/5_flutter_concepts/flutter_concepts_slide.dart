@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:youtube_player_iframe/youtube_player_iframe.dart';
 
+import '../../common/bullet_list.dart';
 import '../../templates/templates.dart';
 
 class FlutterConceptsSlide extends StatefulWidget {
@@ -31,7 +31,14 @@ class _FlutterConceptsSlideState extends State<FlutterConceptsSlide> {
   Widget build(BuildContext context) {
     return SplitScreenTemplate(
       title: 'How Flutter works?',
-      leftChild: const SizedBox(),
+      leftChild: const BulletList(
+        items: [
+          'Uses its own high-performance rendering engine',
+          'Takes charge of every pixel on the screen',
+          'Flutter - declarative framework',
+          'Widget - a unit of composition',
+        ],
+      ),
       rightChild: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../common/bullet_list.dart';
 import '../../templates/templates.dart';
 
 class FlutterIntroSlide extends StatelessWidget {
@@ -12,9 +13,21 @@ class FlutterIntroSlide extends StatelessWidget {
         children: const [
           _Title(),
           SizedBox(height: 32.0),
+          Expanded(
+            child: BulletList(
+              items: [
+                'Free and open-source UI toolkit to build cross-platform applications',
+                'First public release in 2017',
+                'Built with C, C++, Dart, and Skia',
+              ],
+            ),
+          ),
         ],
       ),
-      rightChild: const SizedBox(),
+      rightChild: const FlutterLogo(
+        size: 300,
+        style: FlutterLogoStyle.stacked,
+      ),
       leftFlex: 2,
       rightFlex: 3,
     );
