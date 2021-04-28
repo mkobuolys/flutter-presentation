@@ -7,15 +7,14 @@ import '12_flutter_for_toaster/flutter_for_toaster_slide.dart';
 import '13_flutter_comparison/flutter_comparison_slide.dart';
 import '14_dart/dart_slide.dart';
 import '15_tooling/tooling_slide.dart';
-import '16_open_source/open_source_slide.dart';
-import '17_integrations/integrations_slide.dart';
-import '18_community/community_slide.dart';
-import '19_drawbacks/drawbacks_slide.dart';
+import '16_integrations/integrations_slide.dart';
+import '17_community/community_slide.dart';
+import '18_drawbacks/drawbacks_slide.dart';
+import '19_transition_to_flutter/transition_to_flutter_slide.dart';
 import '1_title/title_slide.dart';
-import '20_transition_to_flutter/transition_to_flutter_slide.dart';
-import '21_future_of_flutter/future_of_flutter_slide.dart';
-import '22_self_promotion/self_promotion_slide.dart';
-import '23_thank_you/thank_you_slide.dart';
+import '20_future_of_flutter/future_of_flutter_slide.dart';
+import '21_self_promotion/self_promotion_slide.dart';
+import '22_thank_you/thank_you_slide.dart';
 import '2_agenda/agenda_slide.dart';
 import '3_about_me/about_me_slide.dart';
 import '4_flutter_intro/flutter_intro_slide.dart';
@@ -143,20 +142,18 @@ class _SlidesPageState extends State<SlidesPage> {
                   case 14:
                     return const ToolingSlide();
                   case 15:
-                    return const OpenSourceSlide();
-                  case 16:
                     return const IntegrationsSlide();
-                  case 17:
+                  case 16:
                     return const CommunitySlide();
-                  case 18:
+                  case 17:
                     return const DrawbacksSlide();
-                  case 19:
+                  case 18:
                     return const TransitionToFlutterSlide();
-                  case 20:
+                  case 19:
                     return const FutureOfFlutterSlide();
-                  case 21:
+                  case 20:
                     return const SelfPromotionSlide();
-                  case 22:
+                  case 21:
                     return const ThankYouSlide();
                 }
 
