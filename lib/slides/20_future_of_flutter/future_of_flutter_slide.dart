@@ -1,5 +1,6 @@
 import 'package:flutter/widgets.dart';
 
+import '../../common/bullet_list.dart';
 import '../../templates/templates.dart';
 
 class FutureOfFlutterSlide extends StatelessWidget {
@@ -7,10 +8,17 @@ class FutureOfFlutterSlide extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SplitScreenTemplate(
+    return SplitScreenTemplate(
       title: 'Future of Flutter',
-      leftChild: SizedBox(),
-      rightChild: SizedBox(),
+      leftChild: const BulletList(
+        items: [
+          'Trending for several years straight',
+          'The best choice for cross-platform app development?',
+          'Big companies are investing in Flutter',
+          'The increasing amount of job opportunities',
+        ],
+      ),
+      rightChild: Image.asset('images/flutter_is_the_future.png'),
       leftFlex: 2,
       rightFlex: 3,
     );
