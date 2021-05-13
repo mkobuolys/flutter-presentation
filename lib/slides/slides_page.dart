@@ -34,7 +34,7 @@ class SlidesPage extends StatefulWidget {
 class _SlidesPageState extends State<SlidesPage> {
   static const _slideSwitchDuration = Duration(milliseconds: 500);
   static const _slideSwitchCurve = Curves.easeInOut;
-  static const _slidesCount = 23;
+  static const _slidesCount = 22;
 
   final _pageController = PageController();
   final _focusNode = FocusNode();
