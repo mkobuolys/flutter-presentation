@@ -33,22 +33,26 @@ class _LoginState extends State<Login> with SingleTickerProviderStateMixin {
     );
 
     final fadeSlideTween = Tween<double>(begin: 0.0, end: 1.0);
-    _headerTextAnimation = fadeSlideTween.animate(CurvedAnimation(
-      parent: _animationController,
-      curve: const Interval(
-        0.0,
-        0.6,
-        curve: Curves.easeInOut,
+    _headerTextAnimation = fadeSlideTween.animate(
+      CurvedAnimation(
+        parent: _animationController,
+        curve: const Interval(
+          0.0,
+          0.6,
+          curve: Curves.easeInOut,
+        ),
       ),
-    ));
-    _formElementAnimation = fadeSlideTween.animate(CurvedAnimation(
-      parent: _animationController,
-      curve: const Interval(
-        0.7,
-        1.0,
-        curve: Curves.easeInOut,
+    );
+    _formElementAnimation = fadeSlideTween.animate(
+      CurvedAnimation(
+        parent: _animationController,
+        curve: const Interval(
+          0.7,
+          1.0,
+          curve: Curves.easeInOut,
+        ),
       ),
-    ));
+    );
 
     final clipperOffsetTween = Tween<double>(
       begin: widget.screenHeight,

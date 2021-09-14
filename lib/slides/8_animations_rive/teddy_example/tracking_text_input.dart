@@ -9,14 +9,14 @@ typedef TextChanged = void Function(String text);
 
 // Helper widget to track caret position.
 class TrackingTextInput extends StatefulWidget {
-  const TrackingTextInput(
-      {Key? key,
-      this.onCaretMoved,
-      this.onTextChanged,
-      this.hint,
-      this.label,
-      this.isObscured = false})
-      : super(key: key);
+  const TrackingTextInput({
+    Key? key,
+    this.onCaretMoved,
+    this.onTextChanged,
+    this.hint,
+    this.label,
+    this.isObscured = false,
+  }) : super(key: key);
   final CaretMoved? onCaretMoved;
   final TextChanged? onTextChanged;
   final String? hint;

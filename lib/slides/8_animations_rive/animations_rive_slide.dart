@@ -36,7 +36,7 @@ class AnimationsRiveSlide extends StatelessWidget {
                     showDialog(
                       context: context,
                       builder: (_) => const WebBrowserDialog(
-                        url: 'https://flutter.gskinner.com/vignettes.html',
+                        url: 'https://flutter.gskinner.com/vignettes/',
                       ),
                     );
                   },

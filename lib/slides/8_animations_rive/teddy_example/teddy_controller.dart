@@ -67,8 +67,11 @@ class TeddyController extends FlareControls {
     // so we interpolate towards it by a factor of elapsed time in order to maintain speed regardless of frame rate.
     final diff =
         Vec2D.subtract(Vec2D(), targetTranslation, _faceControl!.translation);
-    final frameTranslation = Vec2D.add(Vec2D(), _faceControl!.translation,
-        Vec2D.scale(diff, diff, min(1.0, elapsed * 5.0)));
+    final frameTranslation = Vec2D.add(
+      Vec2D(),
+      _faceControl!.translation,
+      Vec2D.scale(diff, diff, min(1.0, elapsed * 5.0)),
+    );
 
     _faceControl!.translation = frameTranslation;
 

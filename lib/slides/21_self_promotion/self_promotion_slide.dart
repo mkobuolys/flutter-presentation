@@ -29,7 +29,7 @@ class _SelfPromotionSlideState extends State<SelfPromotionSlide> {
         items: [
           'mkobuolys.medium.com - to learn',
           'github.com/mkobuolys - to explore',
-          'youtube.com/mkobuolys - to watch (soon)',
+          'youtube.com/mkobuolys - to watch',
           'twitter.com/mkobuolys - to get in touch',
         ],
       ),

@@ -57,10 +57,12 @@ class _OnboardingState extends State<Onboarding> with TickerProviderStateMixin {
     _rippleAnimation = Tween<double>(
       begin: 0.0,
       end: widget.screenHeight,
-    ).animate(CurvedAnimation(
-      parent: _rippleAnimationController,
-      curve: Curves.easeIn,
-    ));
+    ).animate(
+      CurvedAnimation(
+        parent: _rippleAnimationController,
+        curve: Curves.easeIn,
+      ),
+    );
 
     _setPageIndicatorAnimation();
     _setCardsSlideOutAnimation();
@@ -121,17 +123,21 @@ class _OnboardingState extends State<Onboarding> with TickerProviderStateMixin {
       _slideAnimationLightCard = Tween<Offset>(
         begin: const Offset(3.0, 0.0),
         end: Offset.zero,
-      ).animate(CurvedAnimation(
-        parent: _cardsAnimationController,
-        curve: Curves.easeOut,
-      ));
+      ).animate(
+        CurvedAnimation(
+          parent: _cardsAnimationController,
+          curve: Curves.easeOut,
+        ),
+      );
       _slideAnimationDarkCard = Tween<Offset>(
         begin: const Offset(1.5, 0.0),
         end: Offset.zero,
-      ).animate(CurvedAnimation(
-        parent: _cardsAnimationController,
-        curve: Curves.easeOut,
-      ));
+      ).animate(
+        CurvedAnimation(
+          parent: _cardsAnimationController,
+          curve: Curves.easeOut,
+        ),
+      );
       _cardsAnimationController.reset();
     });
   }
@@ -141,17 +147,21 @@ class _OnboardingState extends State<Onboarding> with TickerProviderStateMixin {
       _slideAnimationLightCard = Tween<Offset>(
         begin: Offset.zero,
         end: const Offset(-3.0, 0.0),
-      ).animate(CurvedAnimation(
-        parent: _cardsAnimationController,
-        curve: Curves.easeIn,
-      ));
+      ).animate(
+        CurvedAnimation(
+          parent: _cardsAnimationController,
+          curve: Curves.easeIn,
+        ),
+      );
       _slideAnimationDarkCard = Tween<Offset>(
         begin: Offset.zero,
         end: const Offset(-1.5, 0.0),
-      ).animate(CurvedAnimation(
-        parent: _cardsAnimationController,
-        curve: Curves.easeIn,
-      ));
+      ).animate(
+        CurvedAnimation(
+          parent: _cardsAnimationController,
+          curve: Curves.easeIn,
+        ),
+      );
       _cardsAnimationController.reset();
     });
   }
@@ -211,6 +221,8 @@ class _OnboardingState extends State<Onboarding> with TickerProviderStateMixin {
 
   Future<void> _goToLogin() async {
     await _rippleAnimationController.forward();
+
+    if (!mounted) return;
     Navigator.of(context).pushReplacement(
       MaterialPageRoute(
         builder: (_) => Login(screenHeight: widget.screenHeight),
